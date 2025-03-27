@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LSNIS Techology</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/fabicon.png ">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./assets/plugins/bootstrap/dist/css/bootstrap.min.css">
+    <!-- UI Kit -->
+    <link rel="stylesheet" href="./assets/plugins/uikit/css/uikit.css">
+    <!-- Font Awesome Icon -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.css" />
+</head>
+
+<body>
+    <!-- <div class="loader" id="loader"></div> -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="header_body">
+                        <a href="./index.html" class="logo">
+                            <img src="./assets/images/logo.png" alt="">
+                        </a>
+                        <input class="menu-btn" type="checkbox" id="menu-btn" />
+                        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                        <ul class="menu">
+                            <li><a href="#about">Home</a></li>
+                            <li><a href="#feature">About</a></li>
+                            <li><a href="#why">Courses</a></li>
+                            <li><a href="#benefits">Members</a></li>
+                            <li><a href="#book">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid p-0 mb-5">
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
+            uk-slideshow="autoplay: true; autoplay-interval: 5000">
+            <div class="uk-slideshow-items slider_area">
+                <div>
+                    <img src="./assets/img/Banner/Banner_1.png" alt="" uk-cover>
+                </div>
+                <div>
+                    <img src="./assets/img/Banner/Banner_2.png" alt="" uk-cover>
+                </div>
+                <div>
+                    <img src="./assets/img/Banner/Banner_3.png" alt="" uk-cover>
+                </div>
+            </div>
+            <a class="uk-position-center-left uk-position-small  slider_arrow" href uk-slidenav-previous
+                uk-slideshow-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small  slider_arrow" href uk-slidenav-next
+                uk-slideshow-item="next"></a>
+        </div>
+    </div>
+    <section class="container" id="book_on_mobile" style="display: none;">
+        <div class="book_buttons mb-5">
+            <button class="custom-btn btn-11"
+                onclick="redirectToLink('https://docs.google.com/forms/d/e/1FAIpQLSeTlKYTOAVnd5RcPIOjvaD-NZG82VUqTKAWWyL7OklrjA16xQ/viewform')">BOOK
+                SLOT<div class="dot"></div></button>
+        </div>
+    </section>
+    <section class="container mt-3">
+        <div class="left_card" id="about">
+            <div class="card_details card_1">
+                <div class="card_left">
+                    <h2 class="event_heading">About the Event</h2>
+                    <p class="event_data">The <strong>Research Journal of Pharmacy and Life Sciences (RJPLS)</strong> and <strong>Indian Pharmacy Graduates' Association (IGPA)</strong> are jointly organizing                         an
+                        <strong>International Conference-cum-Workshop</strong> recognized by the Pharmacy Council of
+                        India.
+                        The event features workshops, presentations, networking, keynote speeches (virtual and
+                        in-person),
+                        and a cultural program. A panel of esteemed experts will discuss key studies, applications, and
+                        emerging topics in Pharmacy, Medical, and Life Sciences. The conference will also recognize
+                        individuals for their contributions to these fields.
+                    </p>
+                </div>
+                <div class="card_right" style="display: none;">
+                    <div class="side_image">
+                        <!-- <img src="./assets/img/icons8-info-100.png" alt=""> -->
+                    </div>
+                </div>
+            </div>
+            <div class="bg_marker"></div>
+        </div>
+        <div class="right_card" id="why">
+            <div class="card_details card_2">
+                <div class="card_left" style="display: none;">
+                    <div class="side_image">
+                        <!-- <img src="./assets/img/icons8-why-100.png" alt=""> -->
+                    </div>
+                </div>
+                <div class="card_right">
+                    <h2 class="event_heading">Why This Event?</h2>
+                    <p class="event_data">This event provides a unique platform for professionals, researchers, and
+                        students
+                        in the fields of Pharmacy, Medical, and Life Sciences to come together and share knowledge. It
+                        aims
+                        to bridge the gap between theoretical research and practical applications, offering valuable
+                        insights into the latest trends, breakthroughs, and challenges. With expert-led workshops,
+                        engaging
+                        presentations, and networking opportunities, this conference fosters collaboration, learning,
+                        and
+                        growth. Additionally, it honors individuals for their outstanding contributions to the
+                        advancement
+                        of these essential fields, making it an unmissable event for anyone passionate about scientific
+                        progress.</p>
+                </div>
+            </div>
+            <div class="bg_marker"></div>
+        </div>
+    </section>
+
+    <!-- <section class="container mt-5 listed_items">
+        <div class="row">
+            <div class="col-md-6 mb-3" id="feature">
+                <h2 class="event_heading text-center mb-3">Features</h2>
+                <ul>
+                    <li>Participate in engaging sessions during the seminar to gain valuable insights from experts.</li>
+                    <li>Enhance your practical skills with hands-on workshops led by industry professionals.</li>
+                    <li>Showcase your research and ideas through paper and oral presentations, receiving constructive
+                        feedback.</li>
+                    <li>Relish a variety of meals, including breakfast, lunch, snacks, and dinner, throughout the event.
+                    </li>
+                    <li>Enjoy a captivating cultural program that celebrates talent and diversity.</li>
+                </ul>
+            </div>
+            <div class="col-md-6 mb-3" id="benefits">
+                <h2 class="event_heading text-center mb-3">Benefits</h2>
+                <ul>
+                    <li>Participate in a workshop on Basic Cardiac Life Support (CPR) to enhance critical life-saving
+                        skills.</li>
+                    <li>Gain valuable insights from an international speaker on pharmaceutical management.</li>
+                    <li>Learn through impactful presentations by experts from leading pharmaceutical industries.</li>
+                    <li>Network and connect with legends and pioneers of the pharmacy sector.</li>
+                    <li>Enhance and build excellent communication skills for professional success.</li>
+                </ul>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="container mt-5 listed_items">
+        <div class="row">
+            <div class="col-md-6 mb-3" id="feature">
+                <h2 class="event_heading text-center mb-3">Objectives</h2>
+                <ul>
+                    <li>Share cutting-edge research in pharmacy and life sciences.</li>
+                    <li>Foster collaborations among academia, industry, and healthcare professionals.</li>
+                    <li>Discuss innovative solutions for global health challenges.</li>
+                </ul>
+            </div>
+            <div class="col-md-6 mb-3" id="benefits">
+                <h2 class="event_heading text-center mb-3">Highlights</h2>
+                <ul>
+                    <li>Hands-on training on Basic Cardiac Life Support (CPR).</li>
+                    <li>Expert faculty from renowned institutions.</li>
+                    <li>Certification upon successful completion.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-4" style="display: none;">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="event_heading text-center mb-3">Our Achievements</h2>
+                <div class="justify-content-center" uk-grid uk-lightbox="animation: slide">
+                    <div class="lighibox_image">
+                        <a class="uk-inline" href="./assets/img/Images/image_1.jpeg" data-caption="Caption 1">
+                            <img src="./assets/img/Images/image_1.jpeg">
+                        </a>
+                    </div>
+                    <div class="lighibox_image">
+                        <a class="uk-inline" href="./assets/img/Images/image_2.jpeg" data-caption="Caption 1">
+                            <img src="./assets/img/Images/image_2.jpeg">
+                        </a>
+                    </div>
+                    <div class="lighibox_image">
+                        <a class="uk-inline" href="./assets/img/Images/image_3.jpeg" data-caption="Caption 1">
+                            <img src="./assets/img/Images/image_3.jpeg">
+                        </a>
+                    </div>
+                    <div class="lighibox_image">
+                        <a class="uk-inline" href="./assets/img/Images/image_4.jpeg" data-caption="Caption 1">
+                            <img src="./assets/img/Images/image_4.jpeg">
+                        </a>
+                    </div>
+                    <div class="lighibox_image">
+                        <a class="uk-inline" href="./assets/img/Images/image_5.jpeg" data-caption="Caption 1">
+                            <img src="./assets/img/Images/image_5.jpeg">
+                        </a>
+                    </div>
+                    <div class="lighibox_image">
+                        <a class="uk-inline" href="./assets/img/Images/image_6.jpeg" data-caption="Caption 1">
+                            <img src="./assets/img/Images/image_6.jpeg">
+                        </a>
+                    </div>
+                    <div class="lighibox_image">
+                        <a class="uk-inline" href="./assets/img/Images/image_7.jpeg" data-caption="Caption 1">
+                            <img src="./assets/img/Images/image_7.jpeg">
+                        </a>
+                    </div>
+                    <div class="lighibox_image">
+                        <a class="uk-inline" href="./assets/img/Images/image_8.jpeg" data-caption="Caption 1">
+                            <img src="./assets/img/Images/image_8.jpeg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container gallery my-5">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="event_heading text-center mb-4">Our Achievements</h2>
+                <div class="gallery_container">
+                    <div class="item">
+                        <a href="./assets/img/Images/image_1.jpeg" data-fancybox="gallery">
+                            <img src="./assets/img/Images/image_1.jpeg">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./assets/img/Images/image_2.jpeg" data-fancybox="gallery">
+                            <img src="./assets/img/Images/image_2.jpeg">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./assets/img/Images/image_3.jpeg" data-fancybox="gallery">
+                            <img src="./assets/img/Images/image_3.jpeg">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./assets/img/Images/image_4.jpeg" data-fancybox="gallery">
+                            <img src="./assets/img/Images/image_4.jpeg">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./assets/img/Images/image_5.jpeg" data-fancybox="gallery">
+                            <img src="./assets/img/Images/image_5.jpeg">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./assets/img/Images/image_7.jpeg" data-fancybox="gallery">
+                            <img src="./assets/img/Images/image_7.jpeg">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./assets/img/Images/image_6.jpeg" data-fancybox="gallery">
+                            <img src="./assets/img/Images/image_6.jpeg">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./assets/img/Images/image_8.jpeg" data-fancybox="gallery">
+                            <img src="./assets/img/Images/image_8.jpeg">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./assets/img/Images/image_9.jpeg" data-fancybox="gallery">
+                            <img src="./assets/img/Images/image_9.jpeg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-3">
+        <div class="row">
+            <div class="col-md-12 mb-3" id="feature">
+                <h2 class="event_heading text-center mb-3">We Associate With</h2>
+                <div class="all_logos">
+                    <img src="./assets/img/Logo/logo_1.png" alt="">
+                    <img src="./assets/img/Logo/logo_2.png" alt="">
+                    <img src="./assets/img/Logo/logo_3.png" alt="">
+                    <img src="./assets/img/Logo/logo_4.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="book">
+        <div class="row">
+            <h2 class="event_heading text-center mb-3">Contact & Book Slot</h2>
+            <div class="col-md-5 mb-5">
+                <div class="location_map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.492992726311!2d84.80043189999999!3d19.3044024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3d5a9e4385e0a7%3A0xaae1338603709c15!2sSanskruti%20Bhawan!5e0!3m2!1sen!2sin!4v1732123794302!5m2!1sen!2sin"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="event_schedule">
+                    <p><i class="fa-solid fa-location-dot"></i>Biju Patnaik Sanskruti Bhawan, Hilpatna, Berhampur-760005, Odisha, India</p>
+                    <p><i class="fa-solid fa-calendar-days"></i>22th December 2024 (Sunday) 9:00 AM Onwards</p>
+                </div>
+            </div>
+            <div class="col-md-7 mb-3">
+                <div class="contact_info">
+                    <img src="./assets/img/anjan.jpg" alt="">
+                    <div class="contact_data">
+                        <h1>Dr. Anjan Kumar Mahapatra</h1>
+                        <h2>Professor, Editor-in-Chief (RJPLS)</h2>
+                        <h3>(M. Pharm., Ph. D., D. Sc., F.I.C.,C.C)</h3>
+                        <div class="socials">
+                            <a href="mailto:anjanmahapatra@gmail.com" target="_blank"><i
+                                    class="pe-2 fa-solid fa-envelope"></i><span>anjanmahapatra@gmail.com</span></a>
+                            <a href="tel:+919437194456" target="_blank"><i class="pe-2 fa-solid fa-phone"></i><span>+91
+                                    94371 94456</span></a>
+                            <a href="https://www.linkedin.com/in/dr-anjan-kumar-mahapatra-7037a1265/" target="_blank"><i
+                                    class="pe-2 fa-brands fa-linkedin"></i><span>dr-anjan-kumar-mahapatra-7037a1265</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="book_buttons mt-3">
+                    <button class="custom-btn btn-11"
+                        onclick="redirectToLink('https://docs.google.com/forms/d/e/1FAIpQLSeTlKYTOAVnd5RcPIOjvaD-NZG82VUqTKAWWyL7OklrjA16xQ/viewform')">BOOK
+                        SLOT<div class="dot"></div></button>
+                    <button class="custom-btn btn-1" onclick="redirectToLink('https://rjpls.com/')">Official
+                        Website</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="brand_logo">
+                        <img src="./assets/img/rjpls logo outlined.png" alt="Logo">
+                    </div>
+                    <div class="rjpls_social">
+                        <p class="text-light pe-3 m-0">Contact Us:</p>
+                        <a href="https://www.linkedin.com/company/rjpls/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:icapls2024@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 text-center">
+                    <h4 class="fw-bold mb-3">Quick Links</h4>
+                    <div class="d-flex flex-column gap-2 mx-5">
+                        <a class="btn btn-dark pdf_btn" href="./assets/img/downloads/Brochure.pdf" target="_blank"><i class="fa-regular fa-file-pdf pe-2"></i>Event Brochure</a>
+                        <a class="btn btn-dark whatsapp_btn" href="https://chat.whatsapp.com/Ka469EUPAZm16v5NIrPWRH" target="_blank"><i class="fa-brands fa-whatsapp pe-2"></i>Whatsapp Community</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 text-center">
+                    <h4 class="fw-bold mb-3">Quick References</h4>
+                    <div class="all_abbrs">
+                        <a href="https://ipapharma.org/" target="_blank">IPA</a>
+                        <a href="https://www.ipga.in/" target="_blank">IPGA</a>
+                        <a href="https://www.pci.nic.in/" target="_blank">PCI</a>
+                        <a href="https://rjpls.com/" target="_blank">RJPLS</a>
+                        <a href="https://en.wikipedia.org/wiki/Cardiopulmonary_resuscitation" target="_blank">CPR</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="dev_info container-fluid">
+        <div class="container developer_text text-center">Designed and Developed by <a class="ps-2" href="https://mrchamp.netlify.app/" target="_blank">Chandan Kumar Panigrahi</a> <a href="https://www.linkedin.com/in/mrchampofficial/" target="_blank" class="ps-2"><i class="fa-brands fa-linkedin"></i></a>    <a href="https://www.instagram.com/mrchampofficial/" target="_blank" class="ps-1"><i class="fa-brands fa-instagram"></i></a></div>
+    </div>
+    <div class="copyright_info container-fluid">
+        <p class="container text-center">© 2024 Research Journal of Pharmacy and Life Sciences. All rights reserved.</p>
+    </div>
+
+    <audio id="pageAudio">
+        <source src="./assets/audio/audio.m4a" type="audio/mpeg">
+    </audio>
+
+    <!-- Play/Pause Button -->
+    <div id="controls" class="play_button_float">
+        <button id="playPauseBtn" class="btn play_pause_btn" title="Play/Pause">
+            <i id="playPauseIcon" class="fas fa-play"></i>
+        </button>
+    </div>
+
+
+    <script src="./assets/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./assets/plugins/uikit/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <!-- Loader JS -->
+    <script type="text/javascript">
+        $(window).on("load", function () {
+            // $(".loader").delay(1000).fadeOut(200); // By default
+            $(".loader").delay(0).fadeOut(200);
+        });
+    </script>
+
+    <script>
+        // Function to redirect to a given link in a new tab
+        function redirectToLink(url) {
+            window.open(url, '_blank'); // Open the URL in a new tab
+        }
+
+    </script>
+</body>
+
+</html>
