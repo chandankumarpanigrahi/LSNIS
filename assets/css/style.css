@@ -1,10 +1,15 @@
+:root {
+    --primary-color: #535ae7;
+    --secondary-color: #ffcd24;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
     margin: 0;
     font-family: "Poppins", sans-serif;
-    background-color: #f4f4f4;
-    background-image: url(../img/body.png);
+    background-color: #ffffff;
+    /* background-image: url(../img/body.png); */
     background-blend-mode: exclusion;
     background-size: 20%;
     background-repeat: repeat;
@@ -29,13 +34,14 @@ a {
 
 .header {
     background-color: #ffffff;
-    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+    box-shadow: 5px 0px 20px 0 rgb(0 0 0 / 32%);
     /* position: fixed; */
     width: 100%;
     z-index: 3;
-    /* background-image: url(../img/odishadistrict.png); */
-    background-repeat: repeat-x;
-    background-position: bottom;
+    background-image: url(../images/header_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .header ul {
@@ -172,16 +178,193 @@ a {
 
 .menu li a {
     display: block;
-    padding: 20px 20px;
+    padding: 8px 20px;
     text-decoration: none;
-    color: #19a1cb;
-    font-size: 1.2rem;
+    color: #646464;
+    font-size: 1.1rem;
     font-weight: 400;
+    position: relative;
+}
+
+.menu li.active a::after {
+    position: absolute;
+    height: 3px;
+    width: 80%;
+    content: "";
+    background-color: var(--primary-color);
+    left: 10%;
+    right: 10%;
+    bottom: 0;
+    border-radius: 5rem;
+}
+
+.menu li.active a {
+    font-weight: 600;
+    color: var(--primary-color);
 }
 
 .menu li a:hover {
-    color: #f30707;
+    color: var(--primary-color);
 }
+
+.login_button {
+    border: 3px solid var(--primary-color) !important;
+    border-radius: 0.25rem !important;
+    background-color: var(--primary-color) !important;
+    color: #fff !important;
+    font-weight: 600 !important;
+    padding: 4px 18px !important;
+}
+
+.features_details_card_view {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.featured_details {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.featured_details i {
+    background-color: var(--secondary-color);
+    font-size: 1.8rem;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+.featured_details h3 {
+    font-size: 1.4rem;
+    width: 60%;
+    margin-bottom: 0.25rem;
+}
+
+.featured_details p {
+    margin-bottom: 0;
+    font-size: 0.85rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: calc(1em* 1.5);
+    height: calc(1.5em* 4);
+}
+
+.features_scroller {
+    position: relative;
+}
+
+.features_scroller .feature_left_arrow {
+    position: absolute;
+    right: 50px;
+    bottom: -36px;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 50%;
+}
+
+.features_scroller .feature_right_arrow {
+    position: absolute;
+    right: 12px;
+    bottom: -36px;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 50%;
+}
+
+.feature_texts {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    height: 235px;
+}
+
+.feature_texts h6 {
+    color: var(--secondary-color);
+    margin-bottom: 0;
+    font-size: 1.2rem;
+}
+
+.feature_texts h1 {
+    font-size: 2rem;
+    width: 80%;
+    font-weight: 700;
+    color: var(--primary-color);
+    line-height: 2.2rem;
+    margin-bottom: 0;
+}
+
+.feature_texts p {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    color: #777777;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .event_heading {
     /* font-family: "Lobster Two", sans-serif; */
@@ -196,7 +379,6 @@ a {
     color: #794e17;
 }
 
-.event_data strong {}
 
 .side_image {
     width: 100%;
@@ -589,20 +771,22 @@ a {
     width: 100%;
     font-family: Arial, sans-serif;
     background: linear-gradient(-45deg, #4b2510, #2e1304, #5e2304, #170b05);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 
@@ -617,7 +801,7 @@ a {
     color: #007bff;
 }
 
-.brand_logo{
+.brand_logo {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -632,7 +816,7 @@ a {
     padding: 0 1rem;
 }
 
-.rjpls_social{
+.rjpls_social {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -640,7 +824,7 @@ a {
     gap: 1rem;
 }
 
-.rjpls_social a{
+.rjpls_social a {
     color: #ffeded;
     text-decoration: none;
     font-size: 1.6rem;
@@ -943,17 +1127,17 @@ a {
 }
 
 
-.pdf_btn{
+.pdf_btn {
     background-color: #a70909 !important;
     border-color: #a70909 !important;
 }
 
-.whatsapp_btn{
+.whatsapp_btn {
     background-color: #0f7f39 !important;
     border-color: #0f7f39 !important;
 }
 
-.all_abbrs{
+.all_abbrs {
     display: flex;
     gap: 0.5rem;
     flex-direction: row;
@@ -963,7 +1147,7 @@ a {
     justify-content: center;
 }
 
-.all_abbrs a{
+.all_abbrs a {
     color: #fff;
     background-color: #ffffff21;
     padding: 5px 12px;
@@ -971,10 +1155,11 @@ a {
     text-decoration: none;
 }
 
-.copyright_info{
+.copyright_info {
     background-color: #200808;
 }
-.copyright_info p{
+
+.copyright_info p {
     margin-bottom: 0;
     padding: 2px;
     color: #9f9f9f;

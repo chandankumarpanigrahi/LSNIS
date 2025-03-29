@@ -28,53 +28,137 @@
                         <a href="./index.html" class="logo">
                             <img src="./assets/images/logo.png" alt="">
                         </a>
-                        <input class="menu-btn" type="checkbox" id="menu-btn" />
-                        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-                        <ul class="menu">
-                            <li><a href="#about">Home</a></li>
-                            <li><a href="#feature">About</a></li>
-                            <li><a href="#why">Courses</a></li>
-                            <li><a href="#benefits">Members</a></li>
-                            <li><a href="#book">Contact</a></li>
-                        </ul>
+                        <div class="nav_area_responsive">
+                            <input class="menu-btn" type="checkbox" id="menu-btn" />
+                            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                            <ul class="menu">
+                                <li class="active"><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Courses</a></li>
+                                <li><a href="#">Members</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#" class="login_button">LOGIN</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    <div class="container-fluid p-0 mb-5">
-        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
-            uk-slideshow="autoplay: true; autoplay-interval: 5000">
-            <div class="uk-slideshow-items slider_area">
-                <div>
-                    <img src="./assets/img/Banner/Banner_1.png" alt="" uk-cover>
+
+    <section class="features mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="feature_texts">
+                        <h6>What We Offer</h6>
+                        <h1>What do You Get From Us</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non possimus aspernatur odio ipsam
+                            atque itaque illo deleniti facilis reiciendis neque!</p>
+                    </div>
                 </div>
-                <div>
-                    <img src="./assets/img/Banner/Banner_2.png" alt="" uk-cover>
-                </div>
-                <div>
-                    <img src="./assets/img/Banner/Banner_3.png" alt="" uk-cover>
+                <div class="col-md-9 mb-5">
+                    <div class="uk-slider-container-offset" uk-slider="autoplay: false; autoplay-interval: 3000">
+                        <div class="uk-position-relative uk-visible-toggle uk-light features_scroller" tabindex="-1">
+                            <div class="uk-slider-items uk-child-width-1-3@s uk-child-width-1-1 uk-grid">
+                                <!-- Card 1 -->
+                                <div>
+                                    <div class="features_details_card_view">
+                                        <div class="featured_details">
+                                            <i class="fa-solid fa-user-tie"></i>
+                                            <h3>Professional Teacher</h3>
+                                            <p>Expert educators with industry experience guide you through every step of
+                                                learning.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Card 2 -->
+                                <div>
+                                    <div class="features_details_card_view">
+                                        <div class="featured_details">
+                                            <i class="fa-solid fa-graduation-cap"></i>
+                                            <h3>Course Certificate</h3>
+                                            <p>Earn recognized certification upon completion to showcase your skills and
+                                                achievements.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Card 3 -->
+                                <div>
+                                    <div class="features_details_card_view">
+                                        <div class="featured_details">
+                                            <i class="fa-solid fa-certificate"></i>
+                                            <h3>Best Learning</h3>
+                                            <p>Top-quality resources and methods ensure effective knowledge retention
+                                                and application.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Card 4 -->
+                                <div>
+                                    <div class="features_details_card_view">
+                                        <div class="featured_details">
+                                            <i class="fa-solid fa-book-open"></i>
+                                            <h3>Quality Content</h3>
+                                            <p>Comprehensive, up-to-date materials designed for practical and
+                                                theoretical mastery.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Card 5 -->
+                                <div>
+                                    <div class="features_details_card_view">
+                                        <div class="featured_details">
+                                            <i class="fa-solid fa-chalkboard-user"></i>
+                                            <h3>Interactive Classes</h3>
+                                            <p>Engaging live sessions with real-time feedback and collaborative
+                                                opportunities.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Card 6 -->
+                                <div>
+                                    <div class="features_details_card_view">
+                                        <div class="featured_details">
+                                            <i class="fa-solid fa-headset"></i>
+                                            <h3>24/7 Support</h3>
+                                            <p>Round-the-clock assistance to resolve queries and enhance your learning
+                                                experience.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="feature_left_arrow" href  uk-slider-item="previous"><i class="fa-solid fa-angle-left"></i></a>
+                            <a class="feature_right_arrow" href uk-slider-item="next"><i class="fa-solid fa-angle-right"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <a class="uk-position-center-left uk-position-small  slider_arrow" href uk-slidenav-previous
-                uk-slideshow-item="previous"></a>
-            <a class="uk-position-center-right uk-position-small  slider_arrow" href uk-slidenav-next
-                uk-slideshow-item="next"></a>
-        </div>
-    </div>
-    <section class="container" id="book_on_mobile" style="display: none;">
-        <div class="book_buttons mb-5">
-            <button class="custom-btn btn-11"
-                onclick="redirectToLink('https://docs.google.com/forms/d/e/1FAIpQLSeTlKYTOAVnd5RcPIOjvaD-NZG82VUqTKAWWyL7OklrjA16xQ/viewform')">BOOK
-                SLOT<div class="dot"></div></button>
         </div>
     </section>
+
+
+
+
+
+
+
+
+
+
+
     <section class="container mt-3">
         <div class="left_card" id="about">
             <div class="card_details card_1">
                 <div class="card_left">
                     <h2 class="event_heading">About the Event</h2>
-                    <p class="event_data">The <strong>Research Journal of Pharmacy and Life Sciences (RJPLS)</strong> and <strong>Indian Pharmacy Graduates' Association (IGPA)</strong> are jointly organizing                         an
+                    <p class="event_data">The <strong>Research Journal of Pharmacy and Life Sciences (RJPLS)</strong>
+                        and <strong>Indian Pharmacy Graduates' Association (IGPA)</strong> are jointly organizing an
                         <strong>International Conference-cum-Workshop</strong> recognized by the Pharmacy Council of
                         India.
                         The event features workshops, presentations, networking, keynote speeches (virtual and
@@ -298,7 +382,8 @@
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="event_schedule">
-                    <p><i class="fa-solid fa-location-dot"></i>Biju Patnaik Sanskruti Bhawan, Hilpatna, Berhampur-760005, Odisha, India</p>
+                    <p><i class="fa-solid fa-location-dot"></i>Biju Patnaik Sanskruti Bhawan, Hilpatna,
+                        Berhampur-760005, Odisha, India</p>
                     <p><i class="fa-solid fa-calendar-days"></i>22th December 2024 (Sunday) 9:00 AM Onwards</p>
                 </div>
             </div>
@@ -339,15 +424,18 @@
                     </div>
                     <div class="rjpls_social">
                         <p class="text-light pe-3 m-0">Contact Us:</p>
-                        <a href="https://www.linkedin.com/company/rjpls/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.linkedin.com/company/rjpls/" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
                         <a href="mailto:icapls2024@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4 text-center">
                     <h4 class="fw-bold mb-3">Quick Links</h4>
                     <div class="d-flex flex-column gap-2 mx-5">
-                        <a class="btn btn-dark pdf_btn" href="./assets/img/downloads/Brochure.pdf" target="_blank"><i class="fa-regular fa-file-pdf pe-2"></i>Event Brochure</a>
-                        <a class="btn btn-dark whatsapp_btn" href="https://chat.whatsapp.com/Ka469EUPAZm16v5NIrPWRH" target="_blank"><i class="fa-brands fa-whatsapp pe-2"></i>Whatsapp Community</a>
+                        <a class="btn btn-dark pdf_btn" href="./assets/img/downloads/Brochure.pdf" target="_blank"><i
+                                class="fa-regular fa-file-pdf pe-2"></i>Event Brochure</a>
+                        <a class="btn btn-dark whatsapp_btn" href="https://chat.whatsapp.com/Ka469EUPAZm16v5NIrPWRH"
+                            target="_blank"><i class="fa-brands fa-whatsapp pe-2"></i>Whatsapp Community</a>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4 text-center">
@@ -364,22 +452,16 @@
         </div>
     </footer>
     <div class="dev_info container-fluid">
-        <div class="container developer_text text-center">Designed and Developed by <a class="ps-2" href="https://mrchamp.netlify.app/" target="_blank">Chandan Kumar Panigrahi</a> <a href="https://www.linkedin.com/in/mrchampofficial/" target="_blank" class="ps-2"><i class="fa-brands fa-linkedin"></i></a>    <a href="https://www.instagram.com/mrchampofficial/" target="_blank" class="ps-1"><i class="fa-brands fa-instagram"></i></a></div>
+        <div class="container developer_text text-center">Designed and Developed by <a class="ps-2"
+                href="https://mrchamp.netlify.app/" target="_blank">Chandan Kumar Panigrahi</a> <a
+                href="https://www.linkedin.com/in/mrchampofficial/" target="_blank" class="ps-2"><i
+                    class="fa-brands fa-linkedin"></i></a> <a href="https://www.instagram.com/mrchampofficial/"
+                target="_blank" class="ps-1"><i class="fa-brands fa-instagram"></i></a></div>
     </div>
     <div class="copyright_info container-fluid">
         <p class="container text-center">© 2024 Research Journal of Pharmacy and Life Sciences. All rights reserved.</p>
     </div>
 
-    <audio id="pageAudio">
-        <source src="./assets/audio/audio.m4a" type="audio/mpeg">
-    </audio>
-
-    <!-- Play/Pause Button -->
-    <div id="controls" class="play_button_float">
-        <button id="playPauseBtn" class="btn play_pause_btn" title="Play/Pause">
-            <i id="playPauseIcon" class="fas fa-play"></i>
-        </button>
-    </div>
 
 
     <script src="./assets/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -405,6 +487,20 @@
         function redirectToLink(url) {
             window.open(url, '_blank'); // Open the URL in a new tab
         }
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuItems = document.querySelectorAll(".menu li");
+
+            menuItems.forEach(item => {
+                item.addEventListener("click", function () {
+                    // Remove active class from all
+                    menuItems.forEach(li => li.classList.remove("active"));
+                    // Add active class to the clicked one
+                    this.classList.add("active");
+                });
+            });
+        });
 
     </script>
 </body>
