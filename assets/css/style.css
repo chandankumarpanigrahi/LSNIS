@@ -324,6 +324,29 @@ a {
 }
 
 /* Hero Section */
+.hero_section{    background-color: #e7e7e7;}
+.hero_section_left_text{    display: flex
+    ;
+        flex-direction: column;
+    }
+.hero_section_left_text h6{    font-size: 1.2rem;
+    color: var(--primary-color);}
+.hero_section_left_text h6 span{    font-weight: 700;
+}
+.hero_section_left_text h1{    font-size: 3rem;
+    width: 60%;
+    font-weight: 700;}
+    .hero_section_left_text h1 span{color: var(--primary-color);}
+.hero_section_left_text p{    font-size: 1.1rem;
+    width: 80%;
+    color: #707070;}
+.hero_section_left_text .hero_buttons{    display: flex
+    ;
+        flex-direction: row;
+        gap: 1rem;
+    }}
+.hero_section_left_text .hero_buttons a{}
+
 .hero_section_left_content {
     position: relative;
 }
