@@ -1,6 +1,7 @@
 :root {
     --primary-color: #535ae7;
     --secondary-color: #ffcd24;
+    --white-color: #ffffff;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -242,7 +243,7 @@ a {
 
 .featured_details h3 {
     font-size: 1.4rem;
-    width: 60%;
+    width: 50%;
     margin-bottom: 0.25rem;
 }
 
@@ -265,7 +266,7 @@ a {
     position: absolute;
     right: 50px;
     bottom: -36px;
-    color: var(--primary-color);
+    color: var(--white-color);
     background-color: var(--secondary-color);
     width: 30px;
     height: 30px;
@@ -281,7 +282,7 @@ a {
     position: absolute;
     right: 12px;
     bottom: -36px;
-    color: var(--primary-color);
+    color: var(--white-color);
     background-color: var(--secondary-color);
     width: 30px;
     height: 30px;
@@ -322,8 +323,127 @@ a {
     color: #777777;
 }
 
+/* Hero Section */
+.hero_section_left_content {
+    position: relative;
+}
 
+.hero_section_left_content .hero_image {
+    width: 100%;
+}
 
+.hero_section_left_content .vector_img {
+    position: absolute;
+}
+
+.hero_section_left_content .vector_img.vector_1 {
+    width: auto;
+    height: 60px;
+    left: 20%;
+    top: 10%;
+    animation: float1 6s ease-in-out infinite;
+}
+
+.hero_section_left_content .vector_img.vector_2 {
+    width: auto;
+    height: 80px;
+    right: 10%;
+    top: 14%;
+    animation: float2 8s ease-in-out infinite;
+}
+
+.hero_section_left_content .vector_img.vector_3 {
+    width: auto;
+    height: 60px;
+    left: 12%;
+    bottom: 34%;
+    animation: float3 5s ease-in-out infinite;
+}
+
+.hero_section_left_content .vector_img.vector_4 {
+    width: auto;
+    height: 60px;
+    right: 25%;
+    bottom: 30%;
+    animation: float4 7s ease-in-out infinite;
+}
+
+.hero_section_left_content .vector_img.vector_5 {
+    width: auto;
+    height: 35px;
+    right: 28%;
+    top: 5%;
+    animation: float5 4s ease-in-out infinite;
+}
+
+.hero_section_left_content .vector_img.vector_6 {
+    width: 25px;
+    height: 25px;
+    left: 5%;
+    top: 35%;
+    animation: float6 9s ease-in-out infinite;
+}
+
+.hero_section_left_content .vector_img.vector_7 {
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    bottom: 3%;
+    animation: float7 5.5s ease-in-out infinite;
+}
+
+.hero_section_left_content .vector_img.vector_8 {
+    width: 25px;
+    height: 25px;
+    right: 5%;
+    top: 40%;
+    animation: float8 6.5s ease-in-out infinite;
+}
+
+/* Floating Animation Keyframes */
+@keyframes float1 {
+    0%, 100% { transform: translateY(0) translateX(0); }
+    50% { transform: translateY(-15px) translateX(5px); }
+  }
+  
+  @keyframes float2 {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    25% { transform: translateY(-10px) rotate(2deg); }
+    75% { transform: translateY(10px) rotate(-2deg); }
+  }
+  
+  @keyframes float3 {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(8px, -8px); }
+  }
+  
+  @keyframes float4 {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+  
+  @keyframes float5 {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(5px, 10px) scale(1.05); }
+  }
+  
+  @keyframes float6 {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-8px) rotate(5deg); }
+  }
+  
+  @keyframes float7 {
+    0% { transform: translate(0, 0); }
+    33% { transform: translate(3px, -5px); }
+    66% { transform: translate(-3px, 5px); }
+    100% { transform: translate(0, 0); }
+  }
+  
+  @keyframes float8 {
+    0%, 100% { transform: translateY(0); }
+    25% { transform: translateY(-5px); }
+    75% { transform: translateY(5px); }
+  }
 
 
 
