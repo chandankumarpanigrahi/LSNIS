@@ -8,6 +8,7 @@
     <link rel="icon" type="image/x-icon" href="./assets/images/fabicon.png ">
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="./assets/plugins/bootstrap/dist/css/bootstrap.min.css">
     <!-- UI Kit -->
@@ -16,6 +17,7 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -24,9 +26,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="header_body">
+                    <div class="header_body wow animate__fadeInDown">
                         <a href="./index.html" class="logo">
-                            <img src="./assets/images/logo.png" alt="">
+                            <!-- <img src="./assets/images/logo.png" alt=""> -->
+                            <img src="./assets/images/logo_blue.png" alt="">
                         </a>
                         <div class="nav_area_responsive">
                             <input class="menu-btn" type="checkbox" id="menu-btn" />
@@ -45,452 +48,425 @@
             </div>
         </div>
     </header>
-    <section class="hero_section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5">
-                    <div class="hero_section_left_text">
-                        <h6>Let's <span>Begin</span></h6>
-                        <h1>Let's Find The Right <span>Course</span> For you</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim, sem non convallis molestie.</p>
-                        <div class="hero_buttons">
-                            <a href="#" class="login_button">LOGIN</a>
-                            <a href="#" class="login_button">LOGIN</a>
+    <main class="wrapper">
+        <section class="hero_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 mt-4 wow animate__fadeInLeft">
+                        <div class="hero_section_left_text">
+                            <h6>Let's <span>Begin</span></h6>
+                            <h1>Let's Find The Right <span>Course</span> For you</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim, sem non
+                                convallis
+                                molestie.</p>
+                            <div class="hero_buttons">
+                                <a href="#" class="login_button">Enroll Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 wow animate__fadeInRight">
+                        <div class="hero_section_left_content">
+                            <!-- <img src="./assets/images/vectors/hero_image.png" alt="" class="hero_image"> -->
+                            <img src="./assets/images/vectors/hero_image_sap.png" alt="" class="hero_image">
+                            <img src="./assets/images/vectors/vector_1.png" alt="" class="vector_img vector_1">
+                            <img src="./assets/images/vectors/vector_2.png" alt="" class="vector_img vector_2">
+                            <img src="./assets/images/vectors/vector_3.png" alt="" class="vector_img vector_3">
+                            <img src="./assets/images/vectors/vector_4.png" alt="" class="vector_img vector_4">
+                            <img src="./assets/images/vectors/vector_5.png" alt="" class="vector_img vector_5">
+                            <img src="./assets/images/vectors/ellipse_1.png" alt="" class="vector_img vector_6">
+                            <img src="./assets/images/vectors/ellipse_2.png" alt="" class="vector_img vector_7">
+                            <img src="./assets/images/vectors/ellipse_3.png" alt="" class="vector_img vector_8">
                         </div>
                     </div>
                 </div>
-                <div class="col-md-7">
-                    <div class="hero_section_left_content">
-                        <!-- <img src="./assets/images/vectors/hero_image.png" alt="" class="hero_image"> -->
-                        <img src="./assets/images/vectors/hero_image_sap.png" alt="" class="hero_image">
-                        <img src="./assets/images/vectors/vector_1.png" alt="" class="vector_img vector_1">
-                        <img src="./assets/images/vectors/vector_2.png" alt="" class="vector_img vector_2">
-                        <img src="./assets/images/vectors/vector_3.png" alt="" class="vector_img vector_3">
-                        <img src="./assets/images/vectors/vector_4.png" alt="" class="vector_img vector_4">
-                        <img src="./assets/images/vectors/vector_5.png" alt="" class="vector_img vector_5">
-                        <img src="./assets/images/vectors/ellipse_1.png" alt="" class="vector_img vector_6">
-                        <img src="./assets/images/vectors/ellipse_2.png" alt="" class="vector_img vector_7">
-                        <img src="./assets/images/vectors/ellipse_3.png" alt="" class="vector_img vector_8">
+            </div>
+        </section>
+        <section class="features mt-5 mb-3 ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 wow animate__fadeInUp">
+                        <div class="feature_texts">
+                            <h6>What We Offer</h6>
+                            <h1>What do You Get From Us</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non possimus aspernatur odio
+                                ipsam
+                                atque itaque illo deleniti facilis reiciendis neque!</p>
+                        </div>
+                    </div>
+                    <div class="col-md-9 mb-5 wow animate__fadeInUp">
+                        <div class="uk-slider-container-offset" uk-slider="autoplay: true; autoplay-interval: 3000">
+                            <div class="uk-position-relative uk-visible-toggle uk-light features_scroller"
+                                tabindex="-1">
+                                <div class="uk-slider-items uk-child-width-1-3@s uk-child-width-1-1 uk-grid">
+                                    <!-- Card 1 -->
+                                    <div>
+                                        <div class="features_details_card_view">
+                                            <div class="featured_details">
+                                                <i class="fa-solid fa-user-tie"></i>
+                                                <h3>Professional Teacher</h3>
+                                                <p>Expert educators with industry experience guide you through every
+                                                    step of
+                                                    learning.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card 2 -->
+                                    <div>
+                                        <div class="features_details_card_view">
+                                            <div class="featured_details">
+                                                <i class="fa-solid fa-graduation-cap"></i>
+                                                <h3>Course Certificate</h3>
+                                                <p>Earn recognized certification upon completion to showcase your skills
+                                                    and
+                                                    achievements.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card 3 -->
+                                    <div>
+                                        <div class="features_details_card_view">
+                                            <div class="featured_details">
+                                                <i class="fa-solid fa-certificate"></i>
+                                                <h3>Best Learning</h3>
+                                                <p>Top-quality resources and methods ensure effective knowledge
+                                                    retention
+                                                    and application.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card 4 -->
+                                    <div>
+                                        <div class="features_details_card_view">
+                                            <div class="featured_details">
+                                                <i class="fa-solid fa-book-open"></i>
+                                                <h3>Quality Content</h3>
+                                                <p>Comprehensive, up-to-date materials designed for practical and
+                                                    theoretical mastery.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card 5 -->
+                                    <div>
+                                        <div class="features_details_card_view">
+                                            <div class="featured_details">
+                                                <i class="fa-solid fa-chalkboard-user"></i>
+                                                <h3>Interactive Classes</h3>
+                                                <p>Engaging live sessions with real-time feedback and collaborative
+                                                    opportunities.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card 6 -->
+                                    <div>
+                                        <div class="features_details_card_view">
+                                            <div class="featured_details">
+                                                <i class="fa-solid fa-headset"></i>
+                                                <h3>24/7 Support</h3>
+                                                <p>Round-the-clock assistance to resolve queries and enhance your
+                                                    learning
+                                                    experience.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="feature_left_arrow" href uk-slider-item="previous"><i
+                                        class="fa-solid fa-angle-left"></i></a>
+                                <a class="feature_right_arrow" href uk-slider-item="next"><i
+                                        class="fa-solid fa-angle-right"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="features mt-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="feature_texts">
-                        <h6>What We Offer</h6>
-                        <h1>What do You Get From Us</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non possimus aspernatur odio ipsam
-                            atque itaque illo deleniti facilis reiciendis neque!</p>
+        </section>
+
+        <section class="all_counts mb-4 wow animate__fadeInUp">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="counter_section_left_text">
+                            <h6> Selected Courses</h6>
+                            <h1> People Taking Courses</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta voluptatibus debitis esse
+                                nemo repellat! Commodi harum sit iste consectetur, natus nam aspernatur. Atque excepturi
+                                beatae illum ullam sapiente, modi, dicta quo sint perferendis similique sed officia
+                                maiores!
+                                Ratione, molestias magnam.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-9 mb-5">
-                    <div class="uk-slider-container-offset" uk-slider="autoplay: false; autoplay-interval: 3000">
-                        <div class="uk-position-relative uk-visible-toggle uk-light features_scroller" tabindex="-1">
-                            <div class="uk-slider-items uk-child-width-1-3@s uk-child-width-1-1 uk-grid">
-                                <!-- Card 1 -->
-                                <div>
-                                    <div class="features_details_card_view">
-                                        <div class="featured_details">
-                                            <i class="fa-solid fa-user-tie"></i>
-                                            <h3>Professional Teacher</h3>
-                                            <p>Expert educators with industry experience guide you through every step of
-                                                learning.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Card 2 -->
-                                <div>
-                                    <div class="features_details_card_view">
-                                        <div class="featured_details">
-                                            <i class="fa-solid fa-graduation-cap"></i>
-                                            <h3>Course Certificate</h3>
-                                            <p>Earn recognized certification upon completion to showcase your skills and
-                                                achievements.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Card 3 -->
-                                <div>
-                                    <div class="features_details_card_view">
-                                        <div class="featured_details">
-                                            <i class="fa-solid fa-certificate"></i>
-                                            <h3>Best Learning</h3>
-                                            <p>Top-quality resources and methods ensure effective knowledge retention
-                                                and application.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Card 4 -->
-                                <div>
-                                    <div class="features_details_card_view">
-                                        <div class="featured_details">
-                                            <i class="fa-solid fa-book-open"></i>
-                                            <h3>Quality Content</h3>
-                                            <p>Comprehensive, up-to-date materials designed for practical and
-                                                theoretical mastery.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Card 5 -->
-                                <div>
-                                    <div class="features_details_card_view">
-                                        <div class="featured_details">
-                                            <i class="fa-solid fa-chalkboard-user"></i>
-                                            <h3>Interactive Classes</h3>
-                                            <p>Engaging live sessions with real-time feedback and collaborative
-                                                opportunities.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Card 6 -->
-                                <div>
-                                    <div class="features_details_card_view">
-                                        <div class="featured_details">
-                                            <i class="fa-solid fa-headset"></i>
-                                            <h3>24/7 Support</h3>
-                                            <p>Round-the-clock assistance to resolve queries and enhance your learning
-                                                experience.</p>
-                                        </div>
-                                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="counter_card card_1">
+                                    <h1 class="counter" data-countto="10" data-duration="2000">0</h1>
+                                    <p>Course Modules</p>
                                 </div>
                             </div>
-                            <a class="feature_left_arrow" href  uk-slider-item="previous"><i class="fa-solid fa-angle-left"></i></a>
-                            <a class="feature_right_arrow" href uk-slider-item="next"><i class="fa-solid fa-angle-right"></i></a>
+                            <div class="col-md-6">
+                                <div class="counter_card card_2">
+                                    <h1 class="counter" data-countto="25" data-duration="2000">0</h1>
+                                    <p>Enrollments</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="counter_card card_3">
+                                    <h1 class="counter" data-countto="6" data-duration="2000">0</h1>
+                                    <p>Placements</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="counter_card card_4">
+                                    <h1 class="counter" data-countto="4" data-duration="2000">0</h1>
+                                    <p>Year of Success</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-
-
-
-
-
-
-
-
-
-
-    <section class="container mt-3">
-        <div class="left_card" id="about">
-            <div class="card_details card_1">
-                <div class="card_left">
-                    <h2 class="event_heading">About the Event</h2>
-                    <p class="event_data">The <strong>Research Journal of Pharmacy and Life Sciences (RJPLS)</strong>
-                        and <strong>Indian Pharmacy Graduates' Association (IGPA)</strong> are jointly organizing an
-                        <strong>International Conference-cum-Workshop</strong> recognized by the Pharmacy Council of
-                        India.
-                        The event features workshops, presentations, networking, keynote speeches (virtual and
-                        in-person),
-                        and a cultural program. A panel of esteemed experts will discuss key studies, applications, and
-                        emerging topics in Pharmacy, Medical, and Life Sciences. The conference will also recognize
-                        individuals for their contributions to these fields.
-                    </p>
-                </div>
-                <div class="card_right" style="display: none;">
-                    <div class="side_image">
-                        <!-- <img src="./assets/img/icons8-info-100.png" alt=""> -->
+        <section class="my-4">
+            <div class="container wow animate__fadeInUp">
+                <div class="row">
+                    <div class="col-md-12 my-3">
+                        <div class="inner_header">
+                            <h2>Testimonials</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="bg_marker"></div>
-        </div>
-        <div class="right_card" id="why">
-            <div class="card_details card_2">
-                <div class="card_left" style="display: none;">
-                    <div class="side_image">
-                        <!-- <img src="./assets/img/icons8-why-100.png" alt=""> -->
-                    </div>
-                </div>
-                <div class="card_right">
-                    <h2 class="event_heading">Why This Event?</h2>
-                    <p class="event_data">This event provides a unique platform for professionals, researchers, and
-                        students
-                        in the fields of Pharmacy, Medical, and Life Sciences to come together and share knowledge. It
-                        aims
-                        to bridge the gap between theoretical research and practical applications, offering valuable
-                        insights into the latest trends, breakthroughs, and challenges. With expert-led workshops,
-                        engaging
-                        presentations, and networking opportunities, this conference fosters collaboration, learning,
-                        and
-                        growth. Additionally, it honors individuals for their outstanding contributions to the
-                        advancement
-                        of these essential fields, making it an unmissable event for anyone passionate about scientific
-                        progress.</p>
-                </div>
-            </div>
-            <div class="bg_marker"></div>
-        </div>
-    </section>
-
-    <!-- <section class="container mt-5 listed_items">
-        <div class="row">
-            <div class="col-md-6 mb-3" id="feature">
-                <h2 class="event_heading text-center mb-3">Features</h2>
-                <ul>
-                    <li>Participate in engaging sessions during the seminar to gain valuable insights from experts.</li>
-                    <li>Enhance your practical skills with hands-on workshops led by industry professionals.</li>
-                    <li>Showcase your research and ideas through paper and oral presentations, receiving constructive
-                        feedback.</li>
-                    <li>Relish a variety of meals, including breakfast, lunch, snacks, and dinner, throughout the event.
-                    </li>
-                    <li>Enjoy a captivating cultural program that celebrates talent and diversity.</li>
-                </ul>
-            </div>
-            <div class="col-md-6 mb-3" id="benefits">
-                <h2 class="event_heading text-center mb-3">Benefits</h2>
-                <ul>
-                    <li>Participate in a workshop on Basic Cardiac Life Support (CPR) to enhance critical life-saving
-                        skills.</li>
-                    <li>Gain valuable insights from an international speaker on pharmaceutical management.</li>
-                    <li>Learn through impactful presentations by experts from leading pharmaceutical industries.</li>
-                    <li>Network and connect with legends and pioneers of the pharmacy sector.</li>
-                    <li>Enhance and build excellent communication skills for professional success.</li>
-                </ul>
-            </div>
-        </div>
-    </section> -->
-
-    <section class="container mt-5 listed_items">
-        <div class="row">
-            <div class="col-md-6 mb-3" id="feature">
-                <h2 class="event_heading text-center mb-3">Objectives</h2>
-                <ul>
-                    <li>Share cutting-edge research in pharmacy and life sciences.</li>
-                    <li>Foster collaborations among academia, industry, and healthcare professionals.</li>
-                    <li>Discuss innovative solutions for global health challenges.</li>
-                </ul>
-            </div>
-            <div class="col-md-6 mb-3" id="benefits">
-                <h2 class="event_heading text-center mb-3">Highlights</h2>
-                <ul>
-                    <li>Hands-on training on Basic Cardiac Life Support (CPR).</li>
-                    <li>Expert faculty from renowned institutions.</li>
-                    <li>Certification upon successful completion.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section class="container my-4" style="display: none;">
-        <div class="row">
-            <div class="col-md-12">
-                <h2 class="event_heading text-center mb-3">Our Achievements</h2>
-                <div class="justify-content-center" uk-grid uk-lightbox="animation: slide">
-                    <div class="lighibox_image">
-                        <a class="uk-inline" href="./assets/img/Images/image_1.jpeg" data-caption="Caption 1">
-                            <img src="./assets/img/Images/image_1.jpeg">
-                        </a>
-                    </div>
-                    <div class="lighibox_image">
-                        <a class="uk-inline" href="./assets/img/Images/image_2.jpeg" data-caption="Caption 1">
-                            <img src="./assets/img/Images/image_2.jpeg">
-                        </a>
-                    </div>
-                    <div class="lighibox_image">
-                        <a class="uk-inline" href="./assets/img/Images/image_3.jpeg" data-caption="Caption 1">
-                            <img src="./assets/img/Images/image_3.jpeg">
-                        </a>
-                    </div>
-                    <div class="lighibox_image">
-                        <a class="uk-inline" href="./assets/img/Images/image_4.jpeg" data-caption="Caption 1">
-                            <img src="./assets/img/Images/image_4.jpeg">
-                        </a>
-                    </div>
-                    <div class="lighibox_image">
-                        <a class="uk-inline" href="./assets/img/Images/image_5.jpeg" data-caption="Caption 1">
-                            <img src="./assets/img/Images/image_5.jpeg">
-                        </a>
-                    </div>
-                    <div class="lighibox_image">
-                        <a class="uk-inline" href="./assets/img/Images/image_6.jpeg" data-caption="Caption 1">
-                            <img src="./assets/img/Images/image_6.jpeg">
-                        </a>
-                    </div>
-                    <div class="lighibox_image">
-                        <a class="uk-inline" href="./assets/img/Images/image_7.jpeg" data-caption="Caption 1">
-                            <img src="./assets/img/Images/image_7.jpeg">
-                        </a>
-                    </div>
-                    <div class="lighibox_image">
-                        <a class="uk-inline" href="./assets/img/Images/image_8.jpeg" data-caption="Caption 1">
-                            <img src="./assets/img/Images/image_8.jpeg">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="container gallery my-5">
-        <div class="row">
-            <div class="col-md-12">
-                <h2 class="event_heading text-center mb-4">Our Achievements</h2>
-                <div class="gallery_container">
-                    <div class="item">
-                        <a href="./assets/img/Images/image_1.jpeg" data-fancybox="gallery">
-                            <img src="./assets/img/Images/image_1.jpeg">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="./assets/img/Images/image_2.jpeg" data-fancybox="gallery">
-                            <img src="./assets/img/Images/image_2.jpeg">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="./assets/img/Images/image_3.jpeg" data-fancybox="gallery">
-                            <img src="./assets/img/Images/image_3.jpeg">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="./assets/img/Images/image_4.jpeg" data-fancybox="gallery">
-                            <img src="./assets/img/Images/image_4.jpeg">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="./assets/img/Images/image_5.jpeg" data-fancybox="gallery">
-                            <img src="./assets/img/Images/image_5.jpeg">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="./assets/img/Images/image_7.jpeg" data-fancybox="gallery">
-                            <img src="./assets/img/Images/image_7.jpeg">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="./assets/img/Images/image_6.jpeg" data-fancybox="gallery">
-                            <img src="./assets/img/Images/image_6.jpeg">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="./assets/img/Images/image_8.jpeg" data-fancybox="gallery">
-                            <img src="./assets/img/Images/image_8.jpeg">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="./assets/img/Images/image_9.jpeg" data-fancybox="gallery">
-                            <img src="./assets/img/Images/image_9.jpeg">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="container my-3">
-        <div class="row">
-            <div class="col-md-12 mb-3" id="feature">
-                <h2 class="event_heading text-center mb-3">We Associate With</h2>
-                <div class="all_logos">
-                    <img src="./assets/img/Logo/logo_1.png" alt="">
-                    <img src="./assets/img/Logo/logo_2.png" alt="">
-                    <img src="./assets/img/Logo/logo_3.png" alt="">
-                    <img src="./assets/img/Logo/logo_4.png" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="container" id="book">
-        <div class="row">
-            <h2 class="event_heading text-center mb-3">Contact & Book Slot</h2>
-            <div class="col-md-5 mb-5">
-                <div class="location_map">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.492992726311!2d84.80043189999999!3d19.3044024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3d5a9e4385e0a7%3A0xaae1338603709c15!2sSanskruti%20Bhawan!5e0!3m2!1sen!2sin!4v1732123794302!5m2!1sen!2sin"
-                        style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="event_schedule">
-                    <p><i class="fa-solid fa-location-dot"></i>Biju Patnaik Sanskruti Bhawan, Hilpatna,
-                        Berhampur-760005, Odisha, India</p>
-                    <p><i class="fa-solid fa-calendar-days"></i>22th December 2024 (Sunday) 9:00 AM Onwards</p>
-                </div>
-            </div>
-            <div class="col-md-7 mb-3">
-                <div class="contact_info">
-                    <img src="./assets/img/anjan.jpg" alt="">
-                    <div class="contact_data">
-                        <h1>Dr. Anjan Kumar Mahapatra</h1>
-                        <h2>Professor, Editor-in-Chief (RJPLS)</h2>
-                        <h3>(M. Pharm., Ph. D., D. Sc., F.I.C.,C.C)</h3>
-                        <div class="socials">
-                            <a href="mailto:anjanmahapatra@gmail.com" target="_blank"><i
-                                    class="pe-2 fa-solid fa-envelope"></i><span>anjanmahapatra@gmail.com</span></a>
-                            <a href="tel:+919437194456" target="_blank"><i class="pe-2 fa-solid fa-phone"></i><span>+91
-                                    94371 94456</span></a>
-                            <a href="https://www.linkedin.com/in/dr-anjan-kumar-mahapatra-7037a1265/" target="_blank"><i
-                                    class="pe-2 fa-brands fa-linkedin"></i><span>dr-anjan-kumar-mahapatra-7037a1265</span></a>
+                    <div class="col-md-12">
+                        <div class="uk-slider-container-offset" uk-slider="autoplay: true; autoplay-interval: 3000">
+                            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                                <div class="uk-slider-items uk-child-width-1-2@s uk-grid">
+                                    <div>
+                                        <div class="testimonial_card">
+                                            <img src="./assets/images/testimonials/1.jpg" alt="">
+                                            <div class="testimonial_card_view_details">
+                                                <h3 class="uk-card-title">Headline</h3>
+                                                <div class="star_review" data-stars="3"></div>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod
+                                                    tempor incididunt.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="testimonial_card">
+                                            <img src="./assets/images/testimonials/1.jpg" alt="">
+                                            <div class="testimonial_card_view_details">
+                                                <h3 class="uk-card-title">Headline</h3>
+                                                <div class="star_review" data-stars="3"></div>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod
+                                                    tempor incididunt.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="testimonial_card">
+                                            <img src="./assets/images/testimonials/1.jpg" alt="">
+                                            <div class="testimonial_card_view_details">
+                                                <h3 class="uk-card-title">Headline</h3>
+                                                <div class="star_review" data-stars="3"></div>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod
+                                                    tempor incididunt.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="testimonial_card">
+                                            <img src="./assets/images/testimonials/1.jpg" alt="">
+                                            <div class="testimonial_card_view_details">
+                                                <h3 class="uk-card-title">Headline</h3>
+                                                <div class="star_review" data-stars="3"></div>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod
+                                                    tempor incididunt.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="testimonial_card">
+                                            <img src="./assets/images/testimonials/1.jpg" alt="">
+                                            <div class="testimonial_card_view_details">
+                                                <h3 class="uk-card-title">Headline</h3>
+                                                <div class="star_review" data-stars="3"></div>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod
+                                                    tempor incididunt.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <a class="uk-position-center-left uk-position-small" href uk-slidenav-previous uk-slider-item="previous"></a>
+                                 <a class="uk-position-center-right uk-position-small" href uk-slidenav-next uk-slider-item="next"></a> -->
+                            </div>
+                            <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
                         </div>
                     </div>
                 </div>
-                <div class="book_buttons mt-3">
-                    <button class="custom-btn btn-11"
-                        onclick="redirectToLink('https://docs.google.com/forms/d/e/1FAIpQLSeTlKYTOAVnd5RcPIOjvaD-NZG82VUqTKAWWyL7OklrjA16xQ/viewform')">BOOK
-                        SLOT<div class="dot"></div></button>
-                    <button class="custom-btn btn-1" onclick="redirectToLink('https://rjpls.com/')">Official
-                        Website</button>
+            </div>
+        </section>
+
+
+        <section class="quick_n_contact pb-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6  wow animate__fadeInUp">
+                        <div class="inner_header mb-4">
+                            <h2>Quick Links</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                        </div>
+                        <div class="quick-link-container">
+                            <div class="quick-link">
+                                <div class="background"></div>
+                                <a href="#" target="_blank">Fixtures</a>
+                            </div>
+
+                            <div class="quick-link">
+                                <div class="background"></div>
+                                <a href="#" target="_blank">Videos</a>
+                            </div>
+
+                            <div class="quick-link">
+                                <div class="background"></div>
+                                <a href="#" target="_blank">Tickets</a>
+                            </div>
+
+                            <div class="quick-link">
+                                <div class="background"></div>
+                                <a href="#" target="_blank">Teams</a>
+                            </div>
+
+                            <div class="quick-link">
+                                <div class="background"></div>
+                                <a href="#" target="_blank">Venues</a>
+                            </div>
+
+                            <div class="quick-link">
+                                <div class="background"></div>
+                                <a href="#" target="_blank">News</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6  wow animate__fadeInUp">
+                        <div class="inner_header mb-4">
+                            <h2>Contact Us</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                        </div>
+                        <div class="contact_form">
+                            <form>
+                                <fieldset class="uk-fieldset">
+                                    <div class="uk-margin">
+                                        <label class="uk-form-label" for="form-stacked-text">Full Name</label>
+                                        <input class="uk-input" type="text" placeholder="Enter Your Name"
+                                            aria-label="Input">
+                                    </div>
+                                    <div class="uk-margin">
+                                        <label class="uk-form-label" for="form-stacked-text">Email ID</label>
+                                        <input class="uk-input" type="email" placeholder="Enter Your Email ID"
+                                            aria-label="Input">
+                                    </div>
+                                    <div class="uk-margin">
+                                        <label class="uk-form-label" for="form-stacked-text">Phone Number</label>
+                                        <input class="uk-input" type="text" placeholder="Enter Your Phone Number"
+                                            aria-label="Input">
+                                    </div>
+                                    <div class="uk-margin">
+                                        <label class="uk-form-label" for="form-stacked-text">Select Course</label>
+                                        <select class="uk-select" aria-label="Select">
+                                            <option>Select</option>
+                                            <option>Option 01</option>
+                                            <option>Option 02</option>
+                                            <option>Option 03</option>
+                                            <option>Option 04</option>
+                                            <option>Option 05</option>
+                                            <option>Option 06</option>
+                                        </select>
+                                    </div>
+                                    <div class="uk-margin">
+                                        <label class="uk-form-label" for="form-stacked-text">Enter Message</label>
+                                        <textarea class="uk-textarea" rows="5" placeholder="Textarea"
+                                            aria-label="Textarea"></textarea>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
+
+
+
+
+
+
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="brand_logo">
-                        <img src="./assets/img/rjpls logo outlined.png" alt="Logo">
-                    </div>
-                    <div class="rjpls_social">
-                        <p class="text-light pe-3 m-0">Contact Us:</p>
-                        <a href="https://www.linkedin.com/company/rjpls/" target="_blank"><i
-                                class="fab fa-linkedin-in"></i></a>
-                        <a href="mailto:icapls2024@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4 text-center">
-                    <h4 class="fw-bold mb-3">Quick Links</h4>
-                    <div class="d-flex flex-column gap-2 mx-5">
-                        <a class="btn btn-dark pdf_btn" href="./assets/img/downloads/Brochure.pdf" target="_blank"><i
-                                class="fa-regular fa-file-pdf pe-2"></i>Event Brochure</a>
-                        <a class="btn btn-dark whatsapp_btn" href="https://chat.whatsapp.com/Ka469EUPAZm16v5NIrPWRH"
-                            target="_blank"><i class="fa-brands fa-whatsapp pe-2"></i>Whatsapp Community</a>
+                <div class="col-md-6 col-lg-4">
+                    <div class="footer-about">
+                        <h3>About Us</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu lectus a leo tristique
+                            dictum nec non quam. Suspendisse convallis, tortor eu placerat rhoncus, lorem quam iaculis
+                            felis, sed eleifend lacus neque id eros. Integer convallis volutpat neque
+                        </p>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4 text-center">
-                    <h4 class="fw-bold mb-3">Quick References</h4>
-                    <div class="all_abbrs">
-                        <a href="https://ipapharma.org/" target="_blank">IPA</a>
-                        <a href="https://www.ipga.in/" target="_blank">IPGA</a>
-                        <a href="https://www.pci.nic.in/" target="_blank">PCI</a>
-                        <a href="https://rjpls.com/" target="_blank">RJPLS</a>
-                        <a href="https://en.wikipedia.org/wiki/Cardiopulmonary_resuscitation" target="_blank">CPR</a>
+                <div class="col-md-6 col-lg-8">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="footer-link">
+                                <h3>Service Area</h3>
+                                <a href="#">Lorem ipsum</a>
+                                <a href="#">tempus posuere </a>
+                                <a href="#">velit id accumsan</a>
+                                <a href="#">ut porttitor</a>
+                                <a href="#">Nam pretium</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="footer-link">
+                                <h3>Useful Link</h3>
+                                <a href="#">Sed pretium</a>
+                                <a href="#">ultricies turpis at</a>
+                                <a href="#">Mauris cursus</a>
+                                <a href="#">consectetur</a>
+                                <a href="#">condimentum</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="footer-contact">
+                                <h3>Get In Touch</h3>
+                                <p><i class="fa fa-map-marker-alt"></i>Bhubaneswar, Odisha</p>
+                                <p><i class="fa fa-phone-alt"></i>+91 12345 67890</p>
+                                <p><i class="fa fa-envelope"></i>info@example.com</p>
+                                <div class="footer-social">
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-youtube"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-    <div class="dev_info container-fluid">
-        <div class="container developer_text text-center">Designed and Developed by <a class="ps-2"
-                href="https://mrchamp.netlify.app/" target="_blank">Chandan Kumar Panigrahi</a> <a
-                href="https://www.linkedin.com/in/mrchampofficial/" target="_blank" class="ps-2"><i
-                    class="fa-brands fa-linkedin"></i></a> <a href="https://www.instagram.com/mrchampofficial/"
-                target="_blank" class="ps-1"><i class="fa-brands fa-instagram"></i></a></div>
-    </div>
-    <div class="copyright_info container-fluid">
-        <p class="container text-center">© 2024 Research Journal of Pharmacy and Life Sciences. All rights reserved.</p>
-    </div>
 
 
 
@@ -504,6 +480,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <!-- Loader JS -->
     <script type="text/javascript">
         $(window).on("load", function () {
@@ -532,6 +509,146 @@
             });
         });
 
+    </script>
+
+    <script>
+        window.onscroll = function () {
+            var header = document.querySelector("header");
+            if (window.pageYOffset > 0) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        };
+    </script>
+
+    <script>
+        // Counts
+        $(".counter").each(function () {
+            var $this = $(this),
+                countTo = $this.attr("data-countto");
+            countDuration = parseInt($this.attr("data-duration"));
+            $({ counter: $this.text() }).animate(
+                {
+                    counter: countTo
+                },
+                {
+                    duration: countDuration,
+                    easing: "linear",
+                    step: function () {
+                        $this.text(Math.floor(this.counter));
+                    },
+                    complete: function () {
+                        $this.text(this.counter);
+                    }
+                }
+            );
+        });
+
+    </script>
+    <script>
+        // JavaScript to make it work
+        document.addEventListener('DOMContentLoaded', () => {
+            const cursor = document.createElement('div');
+            cursor.classList.add('custom-cursor');
+            document.body.appendChild(cursor);
+
+            document.addEventListener('mousemove', (e) => {
+                cursor.style.left = `${e.clientX}px`;
+                cursor.style.top = `${e.clientY}px`;
+            });
+
+            document.addEventListener('mousedown', () => {
+                cursor.classList.add('click-effect');
+            });
+
+            document.addEventListener('mouseup', () => {
+                cursor.classList.remove('click-effect');
+            });
+
+            // Hide cursor when it's not needed
+            document.addEventListener('mouseleave', () => {
+                cursor.style.opacity = '0';
+            });
+
+            document.addEventListener('mouseenter', () => {
+                cursor.style.opacity = '1';
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const starReviews = document.querySelectorAll('.star_review');
+
+            starReviews.forEach(review => {
+                const starCount = parseInt(review.getAttribute('data-stars')) || 0;
+                let starsHTML = '';
+
+                for (let i = 0; i < starCount; i++) {
+                    starsHTML += '<i class="fa-solid fa-star"></i>';
+                }
+
+                review.innerHTML = starsHTML;
+            });
+        });
+    </script>
+
+    <script>
+        new WOW({
+            boxClass: "wow", // default
+            animateClass: "animate__animated", // default
+            offset: 0, // default
+            mobile: true, // default
+            live: true, // default
+            scrollContainer: null // optional scroll container selector
+        }).init();
+
+        function resetAnimations() {
+            var elements = document.querySelectorAll(".wow");
+            elements.forEach(function (el) {
+                el.classList.remove("animate__animated");
+                void el.offsetWidth; // Trigger reflow
+                el.classList.add("animate__animated");
+            });
+            window.scrollTo(0, 0);
+        }
+        function scrollToBottom() {
+            window.scrollTo(0, document.body.scrollHeight);
+        }
+
+    </script>
+
+    <script>
+        $(function () {
+
+            var wrapper = $('.wrapper');
+            var windowObj = $(window);
+
+            function decreaseWrapper() {
+                wrapper.addClass('small');
+            }
+
+            function increaseWrapper() {
+                wrapper.removeClass('small');
+            }
+
+            windowObj.scroll(function () {
+                if ($(this).scrollTop() + $(this).height() > wrapper.outerHeight()) {
+                    decreaseWrapper();
+                } else {
+                    increaseWrapper();
+                }
+            });
+
+
+            $('html').on('click', '.small', function () {
+                $('html, body').animate({
+                    scrollTop: wrapper.outerHeight() - windowObj.height()
+                }, 500);
+            });
+
+        });
     </script>
 </body>
 

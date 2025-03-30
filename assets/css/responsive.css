@@ -1,0 +1,5 @@
+@media screen and (max-width: 992px) {
+    .hero_section_left_text h1{
+        width: 100%;
+    }
+}
