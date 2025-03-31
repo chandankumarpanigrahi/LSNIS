@@ -29,7 +29,7 @@
                         <a href="./index.html" class="logo">
                             <img src="./assets/images/logo_blue.png" alt="">
                         </a>
-                        <div class="nav_area_responsive">
+                        <!-- <div class="nav_area_responsive">
                             <input class="menu-btn" type="checkbox" id="menu-btn" />
                             <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
                             <ul class="menu">
@@ -40,7 +40,31 @@
                                 <li><a href="#">Contact</a></li>
                                 <li><a href="#" class="login_button">LOGIN</a></li>
                             </ul>
-                        </div>
+                        </div> -->
+                        <nav id='cssmenu'>
+                            <div id="head-mobile"></div>
+                            <div class="button"></div>
+                            <ul>
+                                <li class='active'><a href='#'>Home</a></li>
+                                <li><a href='#'>About</a>
+                                    <ul>
+                                        <li><a href='#'>About Us</a></li>
+                                        <li><a href='#'>Mission</a></li>
+                                        <li><a href='#'>Vision</a></li>
+                                        <li><a href='#'>Achievements</a></li>
+                                        <!-- <li><a href='#'>Product 1</a>
+                                            <ul>
+                                            <li><a href='#'>Sub Product</a></li>
+                                            <li><a href='#'>Sub Product</a></li>
+                                            </ul>
+                                        </li> -->
+                                    </ul>
+                                </li>
+                                <li><a href='#'>Members</a></li>
+                                <li><a href='#'>Gallery</a></li>
+                                <li  class="new_login_button"><a href='#'>LOGIN</a></li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>

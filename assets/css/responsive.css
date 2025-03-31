@@ -10,6 +10,18 @@
     }
 }
 
+@media screen and (min-width: 992px) {
+    #cssmenu > ul > li:hover,
+    #cssmenu ul li.active:hover,
+    #cssmenu ul li.active,
+    #cssmenu ul li.has-sub.active:hover {
+          border-radius: 0.25rem;
+    }
+    #cssmenu > ul > li{
+        margin-left: 0.5rem;
+    }
+}
+
 @media screen and (max-width: 550px) {
     .hero_section_left_content .vector_img.vector_1 {
         height: 40px;
