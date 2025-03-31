@@ -924,7 +924,7 @@ a {
     bottom: 0;
     width: 100%;
     font-family: Arial, sans-serif;
-    margin-top: -50px;
+    /* margin-top: -50px; */
 }
 
 .footer .footer-about,
