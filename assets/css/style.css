@@ -260,14 +260,14 @@ nav {
 
 #cssmenu>ul>li:hover>a,
 #cssmenu ul li.active a {
-    color: #fff
+    /* color: #fff */
 }
 
 #cssmenu>ul>li:hover,
 #cssmenu ul li.active:hover,
 #cssmenu ul li.active,
 #cssmenu ul li.has-sub.active:hover {
-    background: var(--primary-color) !important;
+    /* background: var(--primary-color) !important; */
     -webkit-transition: background .3s ease;
     -ms-transition: background .3s ease;
     transition: background .3s ease;
