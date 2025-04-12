@@ -1,0 +1,6 @@
+$(document).on("scroll",function(){var pageTop=$(document).scrollTop()
+var pageBottom=pageTop+$(window).height()+300
+var tags=$(".fadein")
+for(var i=0;i<tags.length;i++){var tag=tags[i]
+if($(tag).offset().top<pageBottom){$(tag).addClass("visible")}else{$(tag).removeClass("visible")}}})
+const partnerSlider=new Swiper('.partner-slider ',{spaceBetween:0,centeredSlides:!0,speed:5500,autoplay:{delay:0,},loop:!0,slidesPerView:'auto',allowTouchMove:!1,disableOnInteraction:!0,breakpoints:{0:{slidesPerView:1.5,},575:{slidesPerView:3,},1024:{slidesPerView:4,},1280:{slidesPerView:6,},}})

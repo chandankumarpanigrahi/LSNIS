@@ -1,0 +1,979 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+input,
+select,
+textarea {
+    font-family: "Questrial", Arial, Verdana, Tahoma, sans-serif
+}
+
+.badge {
+    font-size: 13px;
+    line-height: 18.2px;
+    font-weight: 400;
+    letter-spacing: normal;
+    background: rgba(0, 148, 255, .1);
+    color: #0094FF;
+    display: inline-block;
+    min-height: 21px;
+    padding: 1.42px 8px;
+    -webkit-border-radius: 21px;
+    -moz-border-radius: 21px;
+    -o-border-radius: 21px;
+    border-radius: 21px
+}
+
+.badge.badge-orange {
+    background: rgba(240, 141, 0, .1);
+    color: #f08d00
+}
+
+.badge.badge-green {
+    background: rgba(117, 157, 0, .1);
+    color: rgb(117, 157, 0)
+}
+
+.badge.badge-purple {
+    background: rgba(99, 66, 255, .1);
+    color: #6342FF
+}
+
+.badge.badge-dark-blue {
+    background: rgba(88, 120, 255, .1);
+    color: #5878ff
+}
+
+.badge.badge-white {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, .36);
+    color: #fff
+}
+
+.badge.badge-gray {
+    color: #6A6A70;
+    background: rgba(106, 106, 112, .1)
+}
+
+.select-menu .wpml-ls-legacy-dropdown-click {
+    width: auto
+}
+
+.select-menu .wpml-ls-legacy-dropdown-click .wpml-ls-item-toggle {
+    font-size: 14px;
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: #fff;
+    padding-right: 14px;
+    padding-left: 14px
+}
+
+@media only screen and (min-width:1024px) {
+    .select-menu .wpml-ls-legacy-dropdown-click .wpml-ls-item-toggle {
+        padding: 0
+    }
+}
+
+@media only screen and (min-width:1280px) {
+    .select-menu .wpml-ls-legacy-dropdown-click .wpml-ls-item-toggle {
+        font-size: 16px
+    }
+}
+
+.select-menu .wpml-ls-legacy-dropdown-click .wpml-ls-item-toggle .wpml-ls-native {
+    padding: 0 7px;
+    margin-left: 0;
+    display: none
+}
+
+@media only screen and (min-width:1024px) {
+    .select-menu .wpml-ls-legacy-dropdown-click .wpml-ls-item-toggle .wpml-ls-native {
+        display: block
+    }
+}
+
+.select-menu .wpml-ls-legacy-dropdown-click .wpml-ls-item-toggle::after {
+    content: none;
+    font-family: "icomoon" !important;
+    border: none;
+    position: static;
+    font-size: 10px
+}
+
+@media only screen and (min-width:1024px) {
+    .select-menu .wpml-ls-legacy-dropdown-click .wpml-ls-item-toggle::after {
+        content: "\F229"
+    }
+}
+
+.select-menu .wpml-ls-flag {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 20px;
+    width: 20px
+}
+
+@media only screen and (min-width:1024px) {
+    .select-menu .wpml-ls-flag {
+        height: 24px;
+        width: 24px
+    }
+}
+
+.select-menu .wpml-ls-sub-menu {
+    width: 230px;
+    overflow-y: auto;
+    left: 0;
+    max-height: 500px;
+    background: #222;
+    border: 0;
+    box-shadow: 0 20px 24px -4px rgba(16, 24, 40, .0784313725);
+    top: 39px
+}
+
+@media only screen and (min-width:1024px) {
+    .select-menu .wpml-ls-sub-menu {
+        top: 40px
+    }
+}
+
+.select-menu .wpml-ls-sub-menu li {
+    border-bottom: 1px solid rgba(255, 255, 255, .12);
+    padding: 12px 16px
+}
+
+.select-menu .wpml-ls-sub-menu li .wpml-ls-link {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    padding: 0;
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    transition: none
+}
+
+.select-menu .wpml-ls-sub-menu li .wpml-ls-link .wpml-ls-native {
+    margin-left: 12px
+}
+
+.select-menu.active .select-btn .icon-arrow-dropdown {
+    transform: rotate(-180deg)
+}
+
+@media only screen and (min-width:1024px) {
+    .site-footer .select-menu .wpml-ls-sub-menu {
+        top: 46px !important
+    }
+}
+
+.site-footer .select-menu .wpml-ls-sub-menu {
+    top: 42px
+}
+
+.wpml-ls-legacy-dropdown-click .wpml-ls-current-language:hover>a,
+.wpml-ls-legacy-dropdown-click a:focus,
+.wpml-ls-legacy-dropdown-click a:hover {
+    color: #fff;
+    background-color: transparent
+}
+
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output,
+.wpcf7 form.payment-required .wpcf7-response-output {
+    border-color: #b82622
+}
+
+.wpcf7-form .wpcf7 form.invalid .wpcf7-response-output {
+    position: absolute;
+    right: 0
+}
+
+.wpcf7-form .wpcf7-not-valid-tip {
+    padding-top: 5px
+}
+
+.form-group {
+    margin-bottom: 24px
+}
+
+.form-group .form-control {
+    font-size: 16px;
+    line-height: 1.375;
+    font-weight: 400;
+    letter-spacing: normal;
+    padding: 10px 14px;
+    box-shadow: 0 1px 2px 0 rgba(16, 24, 40, .0509803922);
+    border: 1px solid rgba(60, 60, 67, .5019607843);
+    width: 100%;
+    background-color: #fdfdfd;
+    color: rgba(60, 60, 67, .6)
+}
+
+.form-group .form-control::placeholder {
+    color: rgba(60, 60, 67, .6)
+}
+
+.form-group textarea {
+    height: 116px
+}
+
+.form-group select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url(../../../../../../../../../themes/accely/assets/images/down-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: 97%;
+    background-size: 12px
+}
+
+.form-group label {
+    font-size: 14px;
+    line-height: 1.429;
+    font-weight: 400;
+    letter-spacing: normal;
+    margin-bottom: 6px;
+    display: inline-block
+}
+
+.form-group .checkbox {
+    width: 20px;
+    height: 20px;
+    margin-right: 12px
+}
+
+.form-group.custom-checkbox-wrap label {
+    position: relative
+}
+
+.form-group.custom-checkbox-wrap label input.checkbox {
+    opacity: 0
+}
+
+.form-group.custom-checkbox-wrap label .custom-checkbox {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #0f0f0f;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -o-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: flex !important;
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.form-group.custom-checkbox-wrap label .custom-checkbox .icon {
+    opacity: 0;
+    color: #7F56D9;
+    font-size: 14px
+}
+
+.form-group.custom-checkbox-wrap label:has(:checked) .custom-checkbox {
+    border-color: #7F56D9;
+    background-color: #F9F5FF
+}
+
+.form-group.custom-checkbox-wrap label:has(:checked) .custom-checkbox .icon {
+    opacity: 1
+}
+
+.wpcf7-list-item {
+    margin-left: 0
+}
+
+#register-event .connect-with-us-right {
+    background: #fff !important
+}
+
+.contact-main-form-wrap .contact-main-form ul.country-list .contact-main-form {
+    display: flex !important;
+    min-height: 100%;
+    justify-content: center;
+    align-items: center;
+    background: #fff
+}
+
+input::placeholder {
+    color: #B1B1B4;
+    opacity: 1
+}
+
+.input-field {
+    background-color: #5878FF;
+    border: 1px solid #225fbf;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 12px 16px;
+    width: 100% !important
+}
+
+.eventform.form-group,
+.eventformfull.form-group {
+    position: relative;
+    width: 100%;
+    margin-top: 2%
+}
+
+.eventform input {
+    background-color: #f7f7f7;
+    border: 1px solid #f7f7f7;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 12px 16px;
+    width: 100% !important;
+    transition: border-color 0.3s ease
+}
+
+.eventformfull input {
+    background-color: #f7f7f7;
+    border: 1px solid #f7f7f7;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 12px 16px;
+    width: 100% !important;
+    transition: border-color 0.3s ease
+}
+
+.customfield label {
+    display: block
+}
+
+.eventformfull label {
+    color: #5878FF;
+    font-family: Open Sans, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    background: #fff !important;
+    font-size: 14px;
+    z-index: 0;
+    padding: 0 3px;
+    transform: translate(-15px, -16px) scale(.88) !important;
+    z-index: 1111;
+    position: absolute;
+    left: 3%;
+    top: 16%;
+    color: #5878FF;
+    display: none
+}
+
+.eventform label {
+    color: #5878FF;
+    font-family: Open Sans, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    background: #fff !important;
+    font-size: 14px;
+    z-index: 0;
+    padding: 0 3px;
+    transform: translate(-15px, -16px) scale(.88) !important;
+    z-index: 1111;
+    position: absolute;
+    left: 6%;
+    top: 16%;
+    color: #5878FF;
+    display: none
+}
+
+.phonelabel {
+    margin-top: 3%
+}
+
+.eventformfull.intl-tel-input.separate-dial-code .selected-flag {
+    background: transparent !important
+}
+
+.eventform input:focus,
+.eventformfull input:focus,
+.eventform select:focus,
+.eventformfull select:focus {
+    border: 1px solid #5878FF;
+    background-color: #fff
+}
+
+form.invalid.eventform {
+    margin-bottom: 0% !important;
+    margin-top: 0% !important
+}
+
+.eventform input.wpcf7-not-valid {
+    margin-top: 2%;
+    border: 1px solid #dc3232 !important
+}
+
+.eventform input[data-active=true]+label,
+.eventform input:focus+label {
+    top: -10px;
+    left: 10px;
+    font-size: 12px;
+    color: #5878FF
+}
+
+.customfield label {
+    display: block !important;
+    margin-top: 2.5%
+}
+
+.customfield1 label {
+    display: block !important;
+    margin-top: -1% !important
+}
+
+.demo-form label.input-label.custombusiness {
+    margin-left: -1.2%
+}
+
+.demo-form label.input-label.custommargin {
+    margin-top: -1.5% !important;
+    margin-left: -3.2% !important
+}
+
+.form-group.customfield.eventform {
+    margin-top: 0% !important
+}
+
+.demo-form .form-group.customfield1.eventform {
+    margin-top: 2% !important
+}
+
+.form-group.customfield1.eventform {
+    margin-top: 0.1% !important;
+    margin-bottom: 12px
+}
+
+.eventform.emailfield,
+.eventform.designationfield,
+.eventform.companyfield {
+    margin-top: 0%
+}
+
+a#resume-upload-btn {
+    border: 1px solid;
+    border-top: 2px solid;
+    border-right: 2px solid
+}
+
+a#resume-upload-btn::after {
+    content: none
+}
+
+a#resume-upload-btn:hover {
+    border-top: 1px solid;
+    border-right: 1px solid
+}
+
+.customfield ul.country-list li.country,
+.customfield1 ul.country-list li.country {
+    padding: 16px 20px !important
+}
+
+.customfield ul.country-list li.country:hover,
+.customfield1 ul.country-list li.country:hover {
+    cursor: pointer;
+    background-color: #f7f7f7 !important
+}
+
+.customfield ul.country-list li.country.active,
+.customfield1 ul.country-list li.country.active {
+    border-bottom: 1px solid #5878FF !important;
+    cursor: pointer;
+    background-color: #f7f7f7 !important
+}
+
+.customfield ul.country-dropdown li,
+.customfield1 ul.country-dropdown li {
+    transition: background-color 0.3s ease, border-bottom 0.3s ease !important;
+    background-color: #f7f7f7 !important;
+    color: #7B7978
+}
+
+.customfield ul.country-dropdown li:hover,
+.customfield1 ul.country-dropdown li:hover {
+    background-color: #f7f7f7 !important;
+    color: #7B7978
+}
+
+.customfield input,
+.customfield1 input {
+    border: 1px solid #5878FF !important;
+    display: block;
+    background: #fff
+}
+
+.customfield .intl-tel-input.allow-dropdown .flag-container,
+.intl-tel-input.separate-dial-code .flag-container,
+.customfield1 .intl-tel-input.allow-dropdown .flag-container,
+.intl-tel-input.separate-dial-code .flag-container {
+    left: 0;
+    right: 0
+}
+
+.eventform .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-3 .selected-flag {
+    background: #fff !important
+}
+
+.eventform .input-container:has(input:focus) label,
+.eventform .input-container:has(input:not(:placeholder-shown)) label {
+    top: -10px;
+    left: 10px;
+    font-size: 12px;
+    color: #007BFF
+}
+
+@media only screen and (min-width:320px) and (max-width:767px) {
+
+    .customfield .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-3 .selected-flag,
+    .customfield1 .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-3 .selected-flag {
+        padding-left: 25%;
+        width: 18vw
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    .connect-with-us-sec .container-fluid .connect-with-us-wrapper .connect-with-us-right .connect-with-us-title {
+        display: none
+    }
+
+    .connect-with-us-sec .container-fluid .connect-with-us-wrapper .connect-with-us-left .connect-with-us-title-mobile {
+        position: absolute !important;
+        left: 16px !important;
+        bottom: 48px !important;
+        color: #ffffff !important;
+        display: block;
+        justify-content: center;
+        text-align: center;
+        width: 100%
+    }
+
+    .connect-with-us-sec .container-fluid .connect-with-us-wrapper {
+        flex-direction: column
+    }
+
+    .connect-with-us-sec .container-fluid .connect-with-us-wrapper .connect-with-us-right {
+        margin: 0px !important;
+        padding: 0 32px !important
+    }
+
+    .connect-with-us-sec .container-fluid .connect-with-us-wrapper .connect-with-us-left {
+        max-width: 100%
+    }
+
+    .customfield label {
+        font-size: 12px;
+        margin-top: 4%
+    }
+
+    .customfield1 label {
+        font-size: 12px;
+        margin-top: 4%
+    }
+
+    .customfield .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-3 .selected-flag {
+        display: flex !important;
+        padding-left: 7%;
+        width: 7vw
+    }
+
+    .customfield1 .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-3 .selected-flag {
+        display: flex !important;
+        padding-left: 7%;
+        width: 7vw
+    }
+
+    .customfield .intl-tel-input.allow-dropdown .flag-container,
+    .intl-tel-input.separate-dial-code .flag-container {
+        left: 12px
+    }
+
+    .customfield1 .intl-tel-input.allow-dropdown .flag-container,
+    .intl-tel-input.separate-dial-code .flag-container {
+        left: 4px
+    }
+}
+
+@media only screen and (min-width:992px) and (max-width:1024px) {
+
+    .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-3 input,
+    .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-3 input[type=tel],
+    .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-3 input[type=text] {
+        padding-left: 47px
+    }
+
+    .eventform input::placeholder {
+        font-size: 14px;
+        padding-left: 10px
+    }
+
+    .customfield label {
+        margin-top: 5.5%
+    }
+
+    .customfield1 label {
+        margin-top: 5.5%
+    }
+}
+
+label.input-label.custommargindemo {
+    margin-top: -1.7%;
+    margin-left: -2%
+}
+
+.form-group.eventform.mt-0 {
+    margin-top: 0%
+}
+
+.mb-0 {
+    margin-bottom: 0%
+}
+
+.mb-1 {
+    margin-bottom: 1%
+}
+
+.mt-minus2 {
+    margin-top: -2% !important
+}
+
+.popup-content form h6 {
+    font-weight: 600
+}
+
+.fs-18px {
+    font-size: 18px
+}
+
+.pdp-sidebar-sec-wrap .pdp-sidebar-content-wrap .stay-connect-sec .upload-resume-img-wrapper .information-form-overlay-wrapper .information-form-wrap .information-title-wrap {
+    margin-bottom: 4%
+}
+
+.pdp-sidebar-sec-wrap .pdp-sidebar-content-wrap .stay-connect-sec .upload-resume-img-wrapper .information-form-overlay-wrapper .information-form-wrap {
+    padding-top: 3%
+}
+
+.pdp-sidebar-sec-wrap .pdp-sidebar-content-wrap .stay-connect-sec .upload-resume-img-wrapper .information-form-overlay-wrapper .information-form-wrap {
+    max-width: 100%
+}
+
+input::placeholder,
+textarea::placeholder,
+select::placeholder {
+    color: #B1B1B4 !important;
+    opacity: 1 !important
+}
+
+input[type=text]::placeholder {
+    color: #B1B1B4 !important
+}
+
+textarea.input-field,
+select.input-field {
+    color: #0F0F0F;
+    border: none;
+    background-color: #f7f7f7;
+    border: 1px solid #f7f7f7;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 12px 16px;
+    width: 100% !important;
+    transition: border-color 0.3s ease
+}
+
+.eventform textarea:focus {
+    border: 1px solid #5878FF;
+    background-color: #fff
+}
+
+input#phone-field.error:focus {
+    border-color: red !important
+}
+
+.phone-error-message {
+    padding-top: 5px
+}
+
+@media only screen and (min-width:426px) and (max-width:768px) {
+    .contacteventform {
+        padding-top: 3% !important
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:475px) {
+    .contacteventform {
+        padding-top: 7% !important
+    }
+}
+
+.contact-main-form textarea {
+    resize: none !important
+}
+
+textarea.wpcf7-not-valid {
+    margin-top: 1%;
+    border: 1px solid #dc3232 !important
+}
+
+select.wpcf7-not-valid {
+    border: 1px solid #dc3232 !important
+}
+
+.contact-letsgo-form label.input-label.custombusiness {
+    margin-left: -.8%
+}
+
+.contact-letsgo-form label.input-label.custommargincareer {
+    margin-top: -0.5% !important
+}
+
+.contact-letsgo-form label.input-label.custommargin {
+    margin-top: -1.5% !important;
+    margin-left: -3.2% !important
+}
+
+.career-form label.input-label.custommargin {
+    margin-top: -1.5% !important;
+    margin-left: -3.2% !important
+}
+
+.career-form label.input-label.custommargincareer {
+    margin-top: -1%;
+    margin-left: 0%
+}
+
+.contacteventform label.input-label.custommargincareer {
+    margin-top: -1% !important;
+    margin-left: 0%
+}
+
+.contacteventform label.input-label.custombusiness {
+    margin-left: -.5%
+}
+
+.contacteventform label.input-label.custombusiness {
+    margin-left: -1%
+}
+
+.contacteventform .eventform label {
+    left: 8%;
+    top: 16%
+}
+
+.contacteventform input.wpcf7-not-valid {
+    margin-top: 1% !important
+}
+
+.contacteventform input#phone-field.wpcf7-not-valid {
+    margin-top: 1% !important
+}
+
+.eventform label {
+    z-index: 1 !important
+}
+
+.event-sec .body-font-xl {
+    margin: 8px 0
+}
+
+.event-sec .badge {
+    margin-right: 4px
+}
+
+.event-sec .category-wrap {
+    margin-bottom: 16px
+}
+
+.event-sec .date-location-wrap p {
+    margin-bottom: 8px
+}
+
+.event-sec .date-location-wrap span {
+    padding-right: 15px
+}
+
+.event-sec .event-slider,
+.event-sec .news-slider {
+    padding-top: 40px;
+    overflow-y: visible
+}
+
+@media only screen and (min-width:1024px) {
+
+    .event-sec .event-slider .swiper-wrapper .swiper-slide,
+    .event-sec .news-slider .swiper-wrapper .swiper-slide {
+        width: 416px
+    }
+}
+
+.event-sec .event-slider .swiper-wrapper .swiper-slide .slider-image,
+.event-sec .news-slider .swiper-wrapper .swiper-slide .slider-image {
+    height: 400px;
+    width: 100%;
+    object-fit: cover
+}
+
+@media only screen and (min-width:1024px) {
+
+    .event-sec .event-slider .swiper-wrapper .swiper-slide .slider-image,
+    .event-sec .news-slider .swiper-wrapper .swiper-slide .slider-image {
+        height: 280px
+    }
+}
+
+.event-sec .event-slider .btn.btn-slider,
+.event-sec .news-slider .btn.btn-slider {
+    display: none
+}
+
+@media only screen and (min-width:1024px) {
+
+    .event-sec .event-slider .btn.btn-slider,
+    .event-sec .news-slider .btn.btn-slider {
+        top: -25px;
+        display: -ms-flex;
+        display: -webkit-flex;
+        display: flex
+    }
+}
+
+.event-sec .event-slider .btn.btn-slider.swiper-button-prev,
+.event-sec .news-slider .btn.btn-slider.swiper-button-prev {
+    left: auto;
+    right: 98px
+}
+
+.event-sec .event-slider .btn.btn-slider.swiper-button-next,
+.event-sec .news-slider .btn.btn-slider.swiper-button-next {
+    right: 32px
+}
+
+.event-sec .event-slider {
+    padding-left: 16px;
+    padding-right: 16px
+}
+
+.event-sec .news-slider .swiper-wrapper {
+    flex-direction: column
+}
+
+@media only screen and (min-width:1024px) {
+    .event-sec .news-slider .swiper-wrapper {
+        flex-direction: row
+    }
+}
+
+.event-sec.news-sec {
+    padding-top: 0
+}
+
+.event-sec.news-sec .swiper-slide .body-font-md {
+    color: rgba(60, 60, 67, .6);
+    margin-bottom: 32px
+}
+
+.event-sec.news-sec .category-wrap {
+    margin: 16px 0
+}
+
+@media only screen and (min-width:768px) {
+    .event-sec.news-sec .category-wrap {
+        margin: 32px 0
+    }
+}
+
+.event-sec.news-sec .slider-link {
+    padding: 5px;
+    display: none
+}
+
+@media only screen and (min-width:768px) {
+    .event-sec.news-sec .slider-link {
+        display: inline-flex
+    }
+}
+
+.event-sec.news-sec .article-wrap {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 416px;
+    background-color: #f7f7f7;
+    padding: 16px;
+    margin-top: 32px
+}
+
+@media only screen and (min-width:768px) {
+    .event-sec.news-sec .article-wrap {
+        background-color: transparent;
+        padding: 0;
+        margin-top: 64px
+    }
+}
+
+.event-sec.news-sec .article-wrap p {
+    color: rgba(60, 60, 67, .6);
+    margin-bottom: 16px
+}
+
+.event-sec.news-sec .article-wrap .link {
+    margin-bottom: 4px;
+    color: #FF9602
+}
+
+.event-sec.news-sec .article-wrap .link:last-child {
+    display: none
+}
+
+@media only screen and (min-width:768px) {
+    .event-sec.news-sec .article-wrap .link:last-child {
+        display: inline-flex
+    }
+}
+
+.event-sec.news-sec .article-wrap .link:after {
+    background: #FF9602
+}
+
+.event-sec .all-article-btn {
+    width: 100%;
+    justify-content: space-between
+}
+
+@media only screen and (min-width:768px) {
+    .event-sec .all-article-btn {
+        display: none
+    }
+}
+
+.event-sec .news-sec-bottom-btn {
+    margin-top: 20px
+}
+
+@media only screen and (min-width:768px) {
+    .event-sec .news-sec-bottom-btn {
+        display: none
+    }
+}
+
+.event-sec .news-sec-bottom-btn .btn {
+    width: 100%;
+    justify-content: space-between
+}

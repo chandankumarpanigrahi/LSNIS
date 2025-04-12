@@ -1,0 +1,1 @@
+const testimonialSlider=new Swiper('.testimonial-slider ',{loop:!0,slidesPerView:1,spaceBetween:32,scrollbar:{draggable:!0,},pagination:{el:'.swiper-pagination',},navigation:{nextEl:'.swiper-button-next',prevEl:'.swiper-button-prev',},breakpoints:{575:{slidesPerView:1,spaceBetween:0,},1024:{slidesPerView:2,},},})

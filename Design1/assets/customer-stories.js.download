@@ -1,0 +1,1 @@
+const storySlider=new Swiper('.story-slider ',{slidesPerView:1,fadeEffect:{crossFade:!0},effect:'fade',speed:400,loop:!0,navigation:{nextEl:'.swiper-button-next',prevEl:'.swiper-button-prev',},})

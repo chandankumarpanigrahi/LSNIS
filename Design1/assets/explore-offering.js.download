@@ -1,0 +1,3 @@
+$(document).ready(function(){jQuery(function($){var accItems=document.getElementsByClassName('explore-offering-accordion-item');var accHDs=document.getElementsByClassName('explore-offering-accordion-heading');for(var i=0;i<accHDs.length;i++){accHDs[i].addEventListener('click',toggleItem,!1)}
+function toggleItem(){var accordionItem=this.parentNode;if(accordionItem.classList.contains('open')){accordionItem.classList.remove('open');accordionItem.classList.add('close')}else{for(var j=0;j<accItems.length;j++){accItems[j].classList.remove('open');accItems[j].classList.add('close')}
+accordionItem.classList.add('open');accordionItem.classList.remove('close')}}})})
